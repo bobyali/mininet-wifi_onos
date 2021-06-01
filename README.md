@@ -4,7 +4,7 @@
 ### Configure the ONOS
 Open a terminal and access the onos container using ssh:
 ```
-$ ssh -p 8101 karaf@172.28.0.13
+$ ssh -p 8101 karaf@170.28.0.13
 password: karaf
 onos> app activate org.onosproject.openflow-base
 onos> app activate org.onosproject.openflow
@@ -18,8 +18,8 @@ $ sudo docker exec -it mininet-wifi bash
 # echo -e "karaf\nkaraf" | passwd root
 # /etc/init.d/ssh start
 # exit
-$ ssh -YA root@172.28.0.10
-# mn --custom topology.py --topo mytopo --controller remote,ip=172.28.0.13 --arp --link tc
+$ ssh -YA root@170.28.0.10
+# mn --custom topology.py --topo mytopo --controller remote,ip=170.28.0.13 --arp --link tc
 
 
 
